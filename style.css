@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque&family=Cinzel:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  gap: 100px;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+  padding: 3px;
+  font-family: "lora, sans-serif;";
+}
+.logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+ 
+}
+.logo:hover {
+  color: #dcaf6d;
+  transition: 0.3 ease-in-out;
+}
+.logo img {
+  width: 80px;
+}
+.name {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+
+  flex-direction: column;
+  font-family: "cinzel, sans-serif;";
+}
+#maharaja {
+  font-weight: lighter;
+  font-size: 20px;
+}
+#restaurant {
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.contents {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.contents p:hover {
+  color: #dcaf6d;
+  transition: 0.3 ease-in-out;
+}
+
+.bill {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "lora, sans-serif;";
+  flex-direction: column;
+  background-color: rgb(251, 207, 242);
+  padding: 20px;
+  gap: 30px;
+}
+.personalInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: xx-large;
+  font-family: "lora, sans-serif;";
+  gap: 50px;
+}
+.billElements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "lora, sans-serif;";
+  gap: 30px;
+}
+.row1 {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.head {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.value {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 15px;
+}
+#submit {
+  outline: 0;
+  width: 90px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: rgb(146, 97, 192);
+  border-radius: 5px;
+}
+.payment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "lora, sans-serif;";
+  gap: 50px;
+  padding: 20px;
+}
+.BillInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: x-large;
+  font-family: "lora, sans-serif;";
+  gap: 50px;
+}
+.billDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "lora, sans-serif;";
+  gap: 30px;
+}
+.button {
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  font-family: "cinzel", serif;
+  font-size: 21px;
+  color: white;
+  background-color: rgb(215, 161, 51);
+  border-radius: 5px;
+}
+
+#result {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px;
+  font-size: 21px;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+  text-shadow: black -3px -5px 10px, grey 3px 5px 10px;
+  background-position: center;
+  background-size: cover;
+  animation: change 30s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-image: url(./Assets/mahal.jpg);
+  }
+  20% {
+    background-image: url(./Assets/key2.jpg);
+  }
+  40% {
+    background-image: url(./Assets/key3.jpg);
+  }
+  60% {
+    background-image: url(./Assets/key4.jpg);
+  }
+  80% {
+    background-image: url(./Assets/key5.jpg);
+  }
+  100% {
+    background-image: url(./Assets/key6.jpg);
+  }
+}
+.hero h1 {
+  color: white;
+  backdrop-filter: blur(10px);
+  font-weight: lighter;
+  padding: 10px;
+  font-size: 50px;
+}
+.hero h5 {
+  color: white;
+  backdrop-filter: blur(10px);
+  font-weight: lighter;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.sectionTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sectionTitle h5 {
+  font-size: large;
+  font-family: cursive;
+  color: rgb(230, 123, 134);
+}
+.sectionTitle h2 {
+  font-size: x-large;
+  padding: 5px 15px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-family: cinzel, serif;
+  font-weight: lighter;
+}
+
+.MenuCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.card h1 {
+  font-family: cinzel, serif;
+  font-weight: lighter;
+}
+.card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card img:hover {
+  width: 350px;
+  height: 350px;
+  box-shadow: 5px 5px 45px rgb(219, 133, 162);
+  transition: 0.4 ease-in-out;
+}
+
+.vision {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Assets/foodimg2.avif);
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+}
+.para h1 {
+  font-weight: lighter;
+}
+.para p {
+  font-size: large;
+}
+.para {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  gap: 30px;
+}
+
+.menuTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.menuTitle h5 {
+  font-size: large;
+  font-family: cursive;
+  color: rgb(230, 123, 134);
+}
+.menuTitle h2 {
+  font-size: xx-large;
+  padding: 5px 15px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-family: cinzel;
+  font-weight: lighter;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menuItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 20px;
+}
+.item img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(211, 150, 150);
+  box-shadow: 2px 2px 80px rgb(247, 178, 210);
+  border-radius: 0px 50% 50% 50%;
+}
+.item img:hover {
+  width: 170px;
+  height: 170px;
+  transition: 0.5s ease-in;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.text h2 {
+  font-family: cinzel, serif;
+  font-weight: lighter;
+}
+.text h4 {
+  font-family: cinzel, serif;
+  font-weight: lighter;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b2024;
+  color: white;
+  padding: 50px;
+  font-size: 40px;
+  font-family: cinzel, serif;
+  font-weight: lighter;
+}
+.footer {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.sectionContact {
+  display: table-cell;
+  text-align: center;
+  color: white;
+  background-color: #323436;
+  padding: 60px;
+}
+.sectionFollow {
+  display: table-cell;
+  text-align: center;
+  color: white;
+  background-color: #1b2024;
+  padding: 60px;
+}
+
+.footer h1 {
+  color: #d1a054;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.fa-brands:hover {
+  font-size: 4em;
+}
+button:hover {
+  background-color: #323436;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1300px) {
+  .row1 {
+    width: 70%;
+  }
+  .value {
+    width: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  .row1 {
+    width: 80%;
+  }
+  .contents {
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 10vh;
+    width: 100%;
+    height: 93vh;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    left: -100%;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-active {
+    left: 0 !important;
+  }
+
+  .burger {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .burger div {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .burger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.active div:nth-child(3) {
+    transform: rotate(60deg) translate(-12px, -11px);
+  }
+}
+
+@media (max-width: 930px) {
+  .MenuCards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .item {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .row1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionContact {
+    width: 100%;
+    display: block;
+  }
+  .sectionFollow {
+    width: 100%;
+    display: block;
+  }
+
+  .vision {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision {
+    padding: 25px;
+  }
+  .para {
+    width: 60%;
+    padding: 25px;
+  }
+  .row1 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 590px) {
+  .menu {
+    flex-direction: column;
+  }
+  .item {
+    padding: 10px;
+  }
+  .menuItems {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .para {
+    width: 70%;
+    gap: 15px;
+  }
+  .para h1 {
+    font-size: 20px;
+  }
+}
